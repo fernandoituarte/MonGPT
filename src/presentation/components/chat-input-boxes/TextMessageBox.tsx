@@ -25,7 +25,7 @@ export const TextMessageBox = ({
   return (
     <form
       onSubmit={handleSendMessage}
-      className="flex flex-row items-center h-16 rounded-xl bg-[#38393d] w-full px-4"
+      className="flex flex-row items-center h-16 rounded-xl bg-[#38393d] w-full md:px-4"
     >
       <div className="flex-grow">
         <div className="relative w-full">

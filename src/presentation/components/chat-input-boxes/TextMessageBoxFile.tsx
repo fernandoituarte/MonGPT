@@ -31,12 +31,12 @@ export const TextMessageBoxFile = ({
   return (
     <form
       onSubmit={handleSendMessage}
-      className="flex flex-row items-center h-16 rounded-xl bg-white w-full px-4"
+      className="flex flex-row items-center h-16 rounded-xl bg-[#38393d] w-full px-4"
     >
       <div className="mr-3">
         <button
           type="button"
-          className="flex items-center justify-center text-gray-400 hover:text-gray-600"
+          className="flex items-center justify-center text-gray-400 hover:text-gray-200"
           onClick={() => inputFileRef.current?.click()}
         >
           <i className="fa-solid fa-paperclip text-xl"></i>
@@ -51,7 +51,7 @@ export const TextMessageBoxFile = ({
         />
       </div>
 
-      <div className="flex-grow">
+      {/* <div className="flex-grow">
         <div className="relative w-full">
           <input
             type="text"
@@ -66,7 +66,7 @@ export const TextMessageBoxFile = ({
             onChange={(e) => setMessage(e.target.value)}
           />
         </div>
-      </div>
+      </div> */}
 
       <div className="ml-4">
         <button className="btn-primary" disabled={!selectedFile}>
@@ -78,7 +78,7 @@ export const TextMessageBoxFile = ({
               {selectedFile.name.substring(0, 10) + "..."}{" "}
             </span>
           )}
-          <i className="fa-regular fa-paper-plane"></i>
+          <i className="fa-regular fa-paper-plane "></i>
         </button>
       </div>
     </form>

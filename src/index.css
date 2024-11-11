@@ -6,7 +6,6 @@ html, body {
   background-color: #000000;
   color: white;
   font-family: 'Open Sans', sans-serif;
-  
 }
 
 
@@ -40,11 +39,15 @@ em {
 }
 
 .chat-container {
-  @apply flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-white bg-opacity-5 h-full p-4;
+  @apply flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-white bg-opacity-5 h-full p-1.5 md:p-4;
 }
 
 .chat-messages {
-  @apply flex flex-col h-full overflow-x-auto mb-4 overflow-scroll;
+  @apply flex flex-col h-full overflow-x-auto mb-4 overflow-auto;
+}
+
+.chat-messages::-webkit-scrollbar {
+  display: none;
 }
 
 

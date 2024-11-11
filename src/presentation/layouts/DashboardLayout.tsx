@@ -4,12 +4,12 @@ import { SidebarMenuItem } from "../components";
 import { useState } from "react";
 
 export const DashboardLayout = () => {
-  const [openSideBar, setOpenSideBar] = useState(false);
+  const [openSideBar, setOpenSideBar] = useState(true);
 
   return (
-    <main className={`flex ${!openSideBar ? 'flex-col' : 'flex-row'} mt-3`}>
+    <main className={`flex ${!openSideBar ? 'flex-col' : 'flex-row'} md:mt-3`}>
       {openSideBar ? (
-        <nav className="sm:flex flex-col ml-5 md:w-[370px] min-h-[calc(100vh-3.0rem)] bg-white bg-opacity-10 pt-4 p-2 md:p-5 rounded-3xl mr-3">
+        <nav className="sm:flex flex-col mr-1 ml-3 md:w-[370px] min-h-[calc(100vh-3.0rem)] bg-white bg-opacity-10 pt-4 p-2 md:p-5 rounded-3xl ">
           <i
             className="fa-solid fa-xmark text-2xl flex justify-center md:justify-start"
             onClick={() => setOpenSideBar(false)}

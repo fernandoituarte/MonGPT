@@ -22,8 +22,6 @@ export const ChatTemplate = () => {
     //TODO: UseCase
 
     setIsLoading(false);
-
-    // Todo: add isGPT message to true
   };
 
   return (

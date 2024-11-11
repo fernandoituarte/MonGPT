@@ -52,14 +52,13 @@ export const menuRoutes = [
     description: "Générer des images",
     component: <ImageGenerationPage />
   },
-  {
-    to: "/image-tunning",
-    icon: "fa-solid fa-wand-magic",
-    title: "Modifier l'image",
-    description: "Génération continue",
-    component: <ImageTunningPage />
-  },
-  
+  // {
+  //   to: "/image-tunning",
+  //   icon: "fa-solid fa-wand-magic",
+  //   title: "Modifier l'image",
+  //   description: "Génération continue",
+  //   component: <ImageTunningPage />
+  // },
   {
     to: "/assistant",
     icon: "fa-solid fa-user",

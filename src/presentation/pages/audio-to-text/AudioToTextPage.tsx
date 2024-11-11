@@ -26,9 +26,10 @@ export const AudioToTextPage = () => {
     if (!resp) return;
 
     const gptMessage = `
-      ## Transcription :
-      __Durée :__ ${Math.round(resp.duration)} secondes
-      ## Le texte est :
+      Transcription : 
+      Durée : ${Math.round(resp.duration)} secondes
+      Le texte est :
+      
       ${resp.text}
     `
 
