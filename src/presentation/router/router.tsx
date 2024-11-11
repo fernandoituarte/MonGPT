@@ -1,5 +1,5 @@
 import { Navigate, createBrowserRouter } from 'react-router-dom';
-import { OrthographyPage, ProsConsPage, TranslatePage, TextToAudioPage, ImageGenerationPage, AssistantPage, ImageTunningPage, AudioToTextPage } from '../pages';
+import { OrthographyPage, ProsConsPage, TranslatePage, TextToAudioPage, ImageGenerationPage, AssistantPage, AudioToTextPage } from '../pages';
 import { DashboardLayout } from '../layouts/DashboardLayout';
 
 export const menuRoutes = [
